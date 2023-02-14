@@ -1,0 +1,17 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    clear: both;
+}
+
+#big-coloured-background {
+    width: 100%;
+    height: 300px;
+    background-color: #707c00;
+}
+
+
+
+
