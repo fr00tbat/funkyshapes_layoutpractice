@@ -13,26 +13,260 @@
 }
 
 .sing-square{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     background-color: #7c1900;
 }
+
+.sing-circle {
+    width: 75px;
+    height: 75px;
+    background-color: #7c1900;
+    border-radius: 50%;
+}
+
+/******/
+/***square colours 1-6***/
+
+
+.colour_1 {
+    background-color: #ff9408;
+}
+.colour_2 {
+    background-color: #29f800;
+}
+.colour_3 {
+    background-color: #fdec00;
+}
+.colour_4 {
+    background-color: #ff0000;
+}
+.colour_5 {
+    background-color: #0004ff;
+}
+.colour_6 {
+    background-color: #5a0096;
+}
+
+
+/******/
+
+/************************************************/
+/*2x3 square grid using relative positioning for each div element */
+.sing-square_2x3grid_1{
+    width: 75px;
+    height: 75px;
+    background-color: #ff9408;
+}
+
+.sing-square_2x3grid_2{
+    width: 75px;
+    height: 75px;
+    background-color: #29f800;
+    position: relative;
+    bottom: 75px;
+    left: 75px;
+}
+
+.sing-square_2x3grid_3{
+    width: 75px;
+    height: 75px;
+    background-color: #fdec00;
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+}
+
+.sing-square_2x3grid_4{
+    width: 75px;
+    height: 75px;
+    background-color: #ff0000;
+    position: relative;
+    bottom: 150px;
+}
+
+.sing-square_2x3grid_5{
+    width: 75px;
+    height: 75px;
+    background-color: #0004ff;
+    position: relative;
+    bottom: 225px;
+    left: 75px;
+}
+
+.sing-square_2x3grid_6{
+    width: 75px;
+    height: 75px;
+    background-color: #5a0096;
+    position: relative;
+    bottom: 300px;
+    left: 150px;
+    overflow: hidden;
+}
+
+* {
+    clear: both;
+}
+/************************************************/
+
+/*3x2 square grid using relative positioning for each div element */
+/*copy css for 1st 2 as is identical*/
+
+.sing-square_3x2grid_3{
+    width: 75px;
+    height: 75px;
+    background-color: #fdec00;
+    position: relative;
+    bottom: 75px;
+}
+
+.sing-square_3x2grid_4{
+    width: 75px;
+    height: 75px;
+    background-color: #ff0000;
+    position: relative;
+    bottom: 150px;
+    left: 75px;
+}
+
+.sing-square_3x2grid_5{
+    width: 75px;
+    height: 75px;
+    background-color: #0004ff;
+    position: relative;
+    bottom: 150px;
+}
+
+.sing-square_3x2grid_6{
+    width: 75px;
+    height: 75px;
+    background-color: #5a0096;
+    position: relative;
+    bottom: 225px;
+    left: 75px;
+}
+
+/************************************************/
+
 
 #middle {
     margin-left: auto;
     margin-right: auto;
 }
 
-#left {
+#right {
     /* position: relative; */
-    margin-left: 10px;
-    float: left;
+    /* margin-left: 83%; adjust for all screen sizes; this is adjusted to smallest */
+
+    float: right;
 }
 
-#right {
-    z-index: 10;
-    position: absolute; 
+#left {
+    /* z-index: 10;
+    position: absolute;  */
     right: 0;
     top: 0;
-    float: right; 
+    float: left; 
 }
+
+
+#series {
+    height: 75px;
+    width: 75px;
+    /*can also put as % to occopy whole div and space more evenly*/
+    display: inline-block;
+    padding: 0; /*make the squares bigger!*/
+    margin: 30px;
+    /* border: 20px black; */ /*doesn't seem to appear*/
+}
+
+.segment {
+    /* top: -300px; */
+    margin-bottom: -220px;
+}
+
+
+#left-third-backg {
+    width: 33%;
+    height: 300px;
+    background-color: #707c00;
+    margin-left: 0;
+    /* margin-right: 33%; */
+}
+
+#centre-third-backg {
+    width: 33%;
+    height: 300px;
+    background-color: #707c00;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#right-third-backg {
+    width: 33%;
+    height: 300px;
+    background-color: #707c00;
+    margin-left: 67%;
+    margin-right: 0;
+}
+
+#left-half-backg {
+    width: 50%;
+    height: 300px;
+    background-color: #707c00;
+    margin-left: 20%;
+    margin-right: auto;
+    
+}
+
+#right-half-backg {
+    width: 50%;
+    height: 300px;
+    background-color: #707c00;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* ************************************************ */
+.bigbigsquare {
+    width: 500px;
+    height: 500px;
+    background-color: #ff0000;
+}
+
+.bigsquare{
+    width: 400px;
+    height: 400px;
+    background-color: #29f800;
+}
+
+.mediumsquare{
+    width: 300px;
+    height: 300px;
+    background-color: #0004ff;
+}
+
+.smallsquare{
+    width: 200px;
+    height: 200px;
+    background-color: #fdec00;
+}
+
+#centring {
+    margin: auto;
+    /* position: relative; */ 
+    display: flex; /*this bit worked for centring*/
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin-top: 50%;
+    margin-bottom: 50%; */
+    /* padding-top: 50%;
+    padding-bottom: 50%;
+    border-top:50%;
+    border-bottom: 50%; */
+    /* top: auto;
+    bottom: auto; */
+    /* justify-content: center; */ /*no effect*/
+}
+
+/* ************************************************ */
