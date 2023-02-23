@@ -8,7 +8,7 @@
 
 #big-coloured-background {
     width: 100%;
-    height: 300px;
+    height: 500px;
     background-color: #707c00;
 }
 
@@ -269,3 +269,22 @@
 }
 
 /* ************************************************ */
+
+.large-oval-centre {
+    height: 80%;
+    width: 300px;
+    background-color: #e8f7c7;
+    margin: auto;
+    /* top: 33%; */
+
+    /* these 2 together seem to centre the text vertically here */
+    display: flex; 
+    align-items: center; 
+
+    border-radius: 50%;
+}
+
+
+
+
+
